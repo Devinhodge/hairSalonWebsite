@@ -1,0 +1,33 @@
+body {
+  width: auto;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 10% 25% 45% 20%;
+  background-color: rgb(247, 247, 247);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+header {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin: 0 auto;
+  padding: 44px 0 50px;
+  text-align: center;
+}
+.has-border {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  padding: 16px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  margin: 0px auto;
+  padding: 33px;
+  width: 380px;
+}

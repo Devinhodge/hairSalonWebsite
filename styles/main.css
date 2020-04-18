@@ -1,0 +1,94 @@
+body {
+  width: auto;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 10% 25% 45% 20%;
+  background-color: rgb(247, 247, 247);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+header {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin: 0 auto;
+  padding: 44px 0 50px;
+  text-align: center;
+}
+.has-border {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  padding: 16px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  margin: 0px auto;
+  padding: 33px;
+  width: 380px;
+}
+main{
+  margin: 0 0 13px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  grid-row: 2/3;
+  grid-column: 1/4;
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 4;
+}
+.beacon {
+  grid-row: 2/3;
+  grid-column: 2/4;
+  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2016/10/10/1024522/22ecea1246083888a728b34bd2348fe7-700.jpg);
+  margin-top: 100px;
+}
+ul {
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.featured li {
+  display: block;
+  float: left;
+  margin: 10px 100px;
+  height: auto;
+  padding: 0 0 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+.sample {
+  border: 1px solid black;
+}
+span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer {
+  grid-row: 4/5;
+  grid-column: 1/4;
+  background: #252525;
+  margin-top: 30px;
+  padding: 36px 0 3px;
+}
+p {
+  display: block;
+  color: white;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+

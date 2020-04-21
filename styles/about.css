@@ -25,6 +25,11 @@ header {
   font-size: 14px;
   text-decoration: none;
   color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+}
+#about {
+  color: rgb(168, 2, 2);
 }
 .logo {
   margin: 0px auto;
@@ -32,9 +37,9 @@ header {
   width: 380px;
 }
 h1 {
-grid-row: 1/3;
-grid-column: 2/3;
-margin: 280px auto;
+  grid-row: 1/3;
+  grid-column: 2/3;
+  margin: 280px auto;
 }
 .hero {
   grid-row: 2/3;

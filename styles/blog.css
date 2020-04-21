@@ -1,8 +1,8 @@
 body {
   width: auto;
   display: grid;
-  grid-template-columns: 33% 34% 33%;
-  grid-template-rows: 10% 25% 45% 20%;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 10% 65% 20%;
   background-color: rgb(247, 247, 247);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -22,21 +22,52 @@ header {
   grid-row: 1/2;
   grid-column: 1/4;
   padding: 16px;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
   color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+}
+#blog {
+  color: rgb(168, 2, 2);
 }
 .logo {
   margin: 0px auto;
   padding: 33px;
   width: 380px;
 }
-
+h1 {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  margin: 10px auto;
+  width: 400px;
+  font-family: 'Alegreya Sans', sans-serif;
+  background: black;
+  color: white;
+}
+h2 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bolder;
+}
+.hero {
+  grid-row: 2/3;
+  grid-column: 1/1;
+  border: 2px solid black;
+  width: 98%;
+}
+main {
+  margin-top: 130px;
+  grid-row: 2/4;
+  grid-column: 2/3;
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: center;
+}
 footer {
   grid-row: 4/5;
   grid-column: 1/4;
   background: #252525;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 36px 0 3px;
 }
 .rights {
@@ -46,4 +77,16 @@ footer {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+.icons {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding-right: 20px;
+}
+img {
+  display: flex;
+  padding-right: 5px;
+  padding-left: 5px;
 }

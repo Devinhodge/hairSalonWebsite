@@ -2,7 +2,7 @@ body {
   width: auto;
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  grid-template-rows: 10% 25% 45% 20%;
+  grid-template-rows: 15% 65% 20%;
   background-color: rgb(247, 247, 247);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -22,9 +22,14 @@ header {
   grid-row: 1/2;
   grid-column: 1/4;
   padding: 16px;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
   color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+}
+#home {
+  color: rgb(168, 2, 2);
 }
 .logo {
   margin: 0px auto;
@@ -45,10 +50,56 @@ main{
   line-height: 4;
 }
 .beacon {
-  grid-row: 2/3;
-  grid-column: 2/4;
-  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2016/10/10/1024522/22ecea1246083888a728b34bd2348fe7-700.jpg);
+  grid-row: 2/4;
+  grid-column: 1/4;
   margin-top: 100px;
+  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2016/10/10/1024522/22ecea1246083888a728b34bd2348fe7-700.jpg);
+}
+h1 {
+  background-color: rgb(247, 247, 247);
+  width: 450px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+}
+h2 {
+  background-color:  #252525;
+  color: rgb(247, 247, 247);
+  width: fit-content;
+  padding: 0 10px 0 10px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+}
+.more {
+  background-color: rgb(168, 2, 2);
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 50px;
+  margin-left: 450px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(247, 243, 243);
+  padding: 0 10px 0 10px;
+}
+nav:hover {
+  color:  rgb(168, 2, 2);
+}
+h3:hover {
+  color:  rgb(168, 2, 2);
 }
 ul {
   list-style-type: none;
@@ -63,25 +114,26 @@ ul {
   float: left;
   margin: 10px 100px;
   height: auto;
-  padding: 0 0 30px;
+  padding: 0 0 30px 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
   line-height: 1;
+  font-size: 20px;
+}
+h3 {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 .sample {
   border: 1px solid black;
 }
-span {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 footer {
-  grid-row: 4/5;
+  grid-row: 3/4;
   grid-column: 1/4;
   background: #252525;
   margin-top: 30px;
-  padding: 36px 0 3px;
+  padding: 36px;
 }
 p {
   display: block;

@@ -12,20 +12,27 @@ body {
 }
 header {
   grid-row: 1/2;
-  grid-column: 2/3;
+  grid-column: 1/4;
   margin-top: 50px;
   text-align: center;
 }
 .logo {
+  grid-row: 1/2;
+  grid-column: 1/4;
   width: 380px;
   text-align: center;
 }
 .has-border {
-  padding: 18px;
-  font-size: 14px;
+  padding: 16px;
+  font-size: 20px;
   line-height: 5;
   text-decoration: none;
   color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+}
+#gallery {
+  color: rgb(168, 2, 2);
 }
 h1 {
   grid-row: 2/3;
@@ -59,7 +66,6 @@ main {
 .image {
   border: 1px solid black;
   margin: 6px 12px;
-
 }
 
 footer {

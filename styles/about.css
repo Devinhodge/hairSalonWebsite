@@ -1,8 +1,8 @@
 body {
   width: auto;
   display: grid;
-  grid-template-columns: 33% 34% 33%;
-  grid-template-rows: 10% 25% 45% 20%;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 25% 55% 20%;
   background-color: rgb(247, 247, 247);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -30,4 +30,38 @@ header {
   margin: 0px auto;
   padding: 33px;
   width: 380px;
+}
+h1 {
+grid-row: 1/3;
+grid-column: 2/3;
+margin: 280px auto;
+}
+.hero {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+main {
+  margin-top: 400px;
+  grid-row: 2/4;
+  grid-column: 2/3;
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: center;
+}
+footer {
+  grid-row: 4/5;
+  grid-column: 1/4;
+  background: #252525;
+  margin-top: 20px;
+  padding: 36px 0 3px;
+}
+.rights {
+  display: block;
+  color: white;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }

@@ -28,6 +28,9 @@ header {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
 }
+.has-border:hover {
+  color: rgb(168, 2, 2);
+}
 #blog {
   color: rgb(168, 2, 2);
 }
@@ -77,6 +80,7 @@ footer {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  padding-left: 8%;
 }
 .icons {
   list-style-type: none;

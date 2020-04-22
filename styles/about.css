@@ -22,11 +22,14 @@ header {
   grid-row: 1/2;
   grid-column: 1/4;
   padding: 16px;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   color: black;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
+}
+.has-border:hover {
+  color: rgb(168, 2, 2);
 }
 #about {
   color: rgb(168, 2, 2);
@@ -39,7 +42,20 @@ header {
 h1 {
   grid-row: 1/3;
   grid-column: 2/3;
-  margin: 280px auto;
+  margin-top: 255px;
+  margin-left: 20%;
+  width: fit-content;
+  height: 38px;
+  padding: 20px;
+  font-size: 45px;
+  font-family: 'Alegreya Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: black;
+  color: rgb(247, 247, 247);;
+
 }
 .hero {
   grid-row: 2/3;
@@ -69,6 +85,7 @@ footer {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  padding-left: 8%;
 }
 .icons {
   list-style-type: none;

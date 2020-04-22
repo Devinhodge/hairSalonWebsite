@@ -40,8 +40,18 @@ header {
 h1 {
   grid-row: 2/3;
   grid-column: 2/3;
-  margin: 40px;
+  margin-left: 30%;
   text-align: center;
+  background-color: black;
+  color: rgb(247, 247, 247);
+  width: fit-content;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 45px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 0 20px;
 }
 main {
   grid-row: 3/4;
@@ -67,8 +77,13 @@ main {
   align-content: center;
 }
 .image {
-  border: 1px solid black;
+  border: 1.5px solid black;
   margin: 6px 12px;
+  opacity: .85;
+}
+.image:hover {
+  opacity: 2;
+  transition-duration: 0.8s;
 }
 footer {
   grid-row: 4/5;

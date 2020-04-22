@@ -2,7 +2,7 @@ body {
   width: auto;
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  grid-template-rows: 10% 25% 45% 20%;
+  grid-template-rows: 25% 55% 20%;
   background-color: rgb(247, 247, 247);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -17,16 +17,20 @@ header {
   margin: 0 auto;
   padding: 44px 0 50px;
   text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 .has-border {
   grid-row: 1/2;
   grid-column: 1/4;
   padding: 16px;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   color: black;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
+}
+.has-border:hover {
+  color: rgb(168, 2, 2);
 }
 #contact {
   color: rgb(168, 2, 2);
@@ -36,9 +40,59 @@ header {
   padding: 33px;
   width: 380px;
 }
+h1 {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  margin-top: 280px;
+  margin-left: 490px;
+  text-align: center;
+  background-color: black;
+  color: rgb(247, 247, 247);
+  width: fit-content;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  padding: 0 20px 0 20px;
+}
+main {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+input {
+  height: 50px;
+  width: 680px;
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#message {
+  height: 300px;
+}
+button {
+  height: 50px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 43%;
+  margin-bottom: 150px;
+  background-color:  #252525;
+  border: none;
+  width: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(247, 247, 247);
+  border-radius: 3px;
+
+}
 
 footer {
-  grid-row: 4/5;
+  grid-row: 3/4;
   grid-column: 1/4;
   background: #252525;
   margin-top: 30px;
@@ -46,11 +100,12 @@ footer {
 }
 .rights {
   display: block;
-  color: white;
+  color: rgb(247, 247, 247);
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  padding-left: 8%;
 }
 .icons {
   list-style-type: none;

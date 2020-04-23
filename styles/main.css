@@ -55,17 +55,25 @@ main{
 .beacon {
   grid-row: 2/4;
   grid-column: 1/4;
-  margin-top: 80px;
-  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2016/10/10/1024522/22ecea1246083888a728b34bd2348fe7-700.jpg);
-}
+  margin-top: 50px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  /*background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2016/10/10/1024522/22ecea1246083888a728b34bd2348fe7-700.jpg");*/
+ }
 h1 {
   background-color: rgb(247, 247, 247);
-  width: 450px;
-  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 30px;
+  height: 50px;
+  margin-top: 50px;
   margin-left: 400px;
+  padding: 0 20px 0 20px;
 }
 h2 {
   background-color:  #252525;
@@ -119,10 +127,11 @@ ul {
   height: auto;
   padding: 0 0 30px 0;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
   line-height: 1;
   font-size: 20px;
 }
-h3 {
+a nav {
   font-size: 25px;
   color: black;
   font-weight: bold;
@@ -152,10 +161,8 @@ p {
   display: flex;
   flex-direction: row;
   float: right;
-  padding-right: 20px;
 }
 img {
   display: flex;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 0 5px 0 5px;
 }

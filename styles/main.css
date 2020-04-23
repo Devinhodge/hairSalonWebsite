@@ -59,7 +59,6 @@ main{
   height: 450px;
   display: flex;
   flex-direction: column;
-  /*background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2016/10/10/1024522/22ecea1246083888a728b34bd2348fe7-700.jpg");*/
  }
 h1 {
   background-color: rgb(247, 247, 247);
@@ -114,28 +113,24 @@ h3:hover {
 }
 ul {
   list-style-type: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  text-decoration: none;
 }
 .featured li {
   display: block;
   float: left;
-  margin: 10px 100px;
+  margin: 15px 0 auto 0;
   height: auto;
-  padding: 0 0 30px 0;
+  padding: 0 0 30px 150px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  line-height: 1;
-  font-size: 20px;
+  line-height: 3;
+  font-size: 25px;
 }
 a nav {
   font-size: 25px;
   color: black;
   font-weight: bold;
-  text-decoration: none;
+  text-align: center;
 }
 .sample {
   border: 1px solid black;
@@ -165,4 +160,76 @@ p {
 img {
   display: flex;
   padding: 0 5px 0 5px;
+}
+@media screen and (max-width: 850px) {
+  .beacon {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 25px;
+    height: 45px;
+    margin: 20px 0 0 10px;
+  }
+  h2 {
+    padding: 0 10px 0 10px;
+    height: 45px;
+    margin: 10px 0 0 10px;
+    font-size: 16px;
+  }
+  .more {
+    margin: 10px 0 5px 10px;
+    font-size: 15px;
+    height: 30px
+  }
+  .featured li {
+    margin-top: 10px;
+    width: 50%;
+    height: auto;
+    padding: 0 auto;
+    line-height: 3;
+    font-size: 20px;
+  }
+  .sample {
+    height: auto;
+    padding: 0;
+  }
+  a nav {
+    font-size: 25px;
+    margin-right: 35px;
+  }
+  footer {
+    margin-top: 100px;
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    margin: 20px 0 0 0;
+  }
+  h2 {
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+  .featured li {
+    padding: 0 15% 0;
+  }
+  a nav {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 55px;
+  }
+  footer {
+    margin-top: 140px;
+    padding: auto;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+  }
+  .icons { 
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+  }
 }

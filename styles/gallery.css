@@ -181,6 +181,7 @@ img {
 @media screen and (max-width: 500px) {
   .logo {
     width: 320px;
+    margin-left: 0;
   }
   .hamburger {
     width: 60px;
@@ -220,5 +221,11 @@ img {
   }
   .icons { 
     margin-right: 60px;
+  }
+}
+@media screen and (max-width: 351px) {
+  footer {
+    margin-top: 90%;
+    width: 100%;
   }
 }

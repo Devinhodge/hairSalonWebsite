@@ -96,6 +96,57 @@ img {
   body {
     grid-template-columns: 5% 90% 5%;
   }
+  .has-border {
+    display: none;
+  }
+  .hamburger {
+    grid-column: 2/3;
+    margin-left: 45%;
+    width: 60px;
+    height: 45px;
+    transform: rotate(0deg);
+    transition: all 300ms ease-in-out;
+  }
+  .hamburger span {
+    display: block;
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    background: rgb(168, 2, 2);
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    left: 0;
+    transition: all .25s ease-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .hamburger span:nth-child(2) {
+    top: 18px;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 36px;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .hamburger.hamburger-close span:nth-child(1) {
+    background: rgb(168, 2, 2);
+    top: 18px;
+    transform: rotate(135deg);
+  }
+  .hamburger.hamburger-close span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  .hamburger.hamburger-close span:nth-child(3) {
+    background: rgb(168, 2, 2);
+    top: 18px;
+    transform: rotate(-135deg);
+  }
 h1 {
   font-size: 35px;
   width: 400px;
@@ -105,25 +156,62 @@ footer {
   margin-top: 50px;
 }
 @media screen and (max-width: 500px) {
+  .logo {
+    width: 80%;
+  }
   .hero {
     grid-row: 1/2;
     margin-top: 350px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+    width: 350px;
+    grid-column: 1/4;
   }
   main {
-    margin-top: 300px;
+    margin-top: 180px;
+    font-size: 14px;
+  }
+  footer {
+    grid-column: 1/4;
+    margin-top: 0;
+    height: 150px;
+  }
+  .rights {
+    margin-left: 30px;
+  }
+  .icons { 
+    margin-right: 92px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .hamburger {
+    margin-left: 42%;
+    width: 60px;
+    height: 45px;
+    transform: rotate(0deg);
+    transition: all 300ms ease-in-out;
+  }
+  h1 {
+    font-size: 25px;
+    width: 85%;
+    height: 25px;
+  }
+  main {
+    margin-top: 180px;
     font-size: 14px;
   }
   footer {
     grid-row: 3/4;
-    grid-column: 1/4;
-    background: #252525;
-    margin-top: 20px;
-    height: 150px;
+    margin-top: 200px;
+    height: 100px;
   }
   .rights {
-    margin-left: 75px;
+    margin-left: 25px;
+    font-size: 12px;
   }
   .icons { 
-    margin-right: 125px;
+    margin-right: 45px;
   }
 }

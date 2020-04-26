@@ -40,7 +40,7 @@ header {
 h1 {
   grid-row: 2/3;
   grid-column: 2/3;
-  margin-left: 30%;
+  margin-left: 27%;
   text-align: center;
   background-color: black;
   color: rgb(247, 247, 247);
@@ -114,23 +114,90 @@ img {
   padding-right: 5px;
   padding-left: 5px;
 }
+
 @media screen and (max-width: 850px) {
+  .has-border {
+    display: none;
+  }
+  .logo {
+    margin-left: 40%;
+  }
+  h1 {
+    margin-left: 90px;
+    width: 300px;
+  }
+  .hamburger {
+    width: 60px;
+    height: 45px;
+    margin-left: 63%;
+    transform: rotate(0deg);
+    transition: all 300ms ease-in-out;
+  }
+  .hamburger span {
+    display: block;
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    background: rgb(168, 2, 2);
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    left: 0;
+    transition: all .25s ease-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .hamburger span:nth-child(2) {
+    top: 18px;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 36px;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .hamburger.hamburger-close span:nth-child(1) {
+    background: rgb(168, 2, 2);
+    top: 18px;
+    transform: rotate(135deg);
+  }
+  .hamburger.hamburger-close span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  .hamburger.hamburger-close span:nth-child(3) {
+    background: rgb(168, 2, 2);
+    top: 18px;
+    transform: rotate(-135deg);
+  }
   footer {
     margin-top: 100px 0;
+    width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
+  .logo {
+    width: 320px;
+  }
+  .hamburger {
+    width: 60px;
+    height: 45px;
+    margin-left: 43%;
+  }
   h1 {
     grid-row: 1/3;
     grid-column: 1/4;
-    margin: auto;
+    margin: 230px auto;
     text-align: center;
     font-size: 40px;
   }
   main {
     grid-row: 1/4;
     grid-column: 1/4;
-    margin: 500px auto 0;
+    margin: 380px auto 0;
   }
   .row1 {
     margin: auto;
@@ -145,12 +212,13 @@ img {
     flex-direction: column;
   }
   footer {
-    margin-top: 70%;
+    margin-top: 80%;
+    width: 100%;
   }
   .rights {
-    margin-left: 75px;
+    margin-left: 30px;
   }
   .icons { 
-    margin-right: 125px;
+    margin-right: 60px;
   }
 }
